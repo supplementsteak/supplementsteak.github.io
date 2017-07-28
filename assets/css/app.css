@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin:  0;
+  background-color: #f7ea00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 62.5rem;
+}
+
+img {
+  transform: rotate(-16deg);
+  width: 100%;
+  animation: floatingBurger 2s cubic-bezier(0.33, 0.17, 0.6, 0.99) infinite;
+}
+
+.logo__container {
+  width: 10rem;
+  position: relative;
+  display: flex;
+}
+.logo__container::after {
+  content: "";
+  position: absolute;
+  left: 56%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  height: 1rem;
+  width: 50%;
+  background-color: #be872c;
+  border-radius: 100%;
+  animation: shadow 2s cubic-bezier(0.33, 0.17, 0.6, 0.99) infinite;
+}
+
+@keyframes floatingBurger {
+  50% {
+    transform: translateY(-10px) rotate(-16deg);
+  }
+}
+@keyframes shadow {
+  50% {
+    opacity: .5;
+    transform: translateX(-50%) scaleX(.8);
+  }
+}
