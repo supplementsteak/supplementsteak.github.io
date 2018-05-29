@@ -15,7 +15,6 @@ body {
 }
 
 img {
-  transform: rotate(-16deg);
   width: 100%;
   animation: floatingBurger 2s cubic-bezier(0.33, 0.17, 0.6, 0.99) infinite;
 }
@@ -33,14 +32,14 @@ img {
   bottom: -2rem;
   height: 1rem;
   width: 50%;
-  background-color: #be872c;
+  background-color: #CD8B15;
   border-radius: 100%;
   animation: shadow 2s cubic-bezier(0.33, 0.17, 0.6, 0.99) infinite;
 }
 
 @keyframes floatingBurger {
   50% {
-    transform: translateY(-10px) rotate(-16deg);
+    transform: translateY(-10px);
   }
 }
 @keyframes shadow {
